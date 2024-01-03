@@ -33,7 +33,7 @@ def registerView(request):
 
         else:
             #print('a'+str(form)+'h')
-            return render(request, 'register.html',{'status':'Username alredy exists!'})
+            return render(request, 'register.html',{'status':'Form data is Invalid!'})
         
         
     
@@ -63,7 +63,7 @@ def loginView(request):
                 return render(request, 'login.html', {'status': "Incorrect Password !"})
         else:
             
-            return render(request, 'login.html', {'status': 'Incorrect Username or Password !'})
+            return render(request, 'login.html', {'status': 'Form data is Invalid!'})
         
             
             
