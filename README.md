@@ -27,6 +27,35 @@ The project is organized into a Django project and a single app. The main compon
    ```bash
    git clone https://github.com/bipins867/OnlineProject.git
 
+2. Navigate to the project folder:
+
+   ```bash
+   cd OnlineProject
+
+3. Install dependencies:
+
+   ```bash
+   pip install django
+
+4. Run migrations:
+
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
+
+5. Create a superuser(admin):
+
+   ```bash
+   python manage.py createsuperuser
+
+6. Run the development server
+   
+   ```bash
+   python manage.py runserver
+
+
+The application will be accessible at http://127.0.0.1:8000/login/
+
 
 
 ## Follow the instructions
