@@ -58,10 +58,13 @@ The application will be accessible at http://127.0.0.1:8000/login/
 
 
 
-## Follow the instructions
+## Usage
 
-- cd OnlineProject
-- pip install django   
-- python manage.py migrate
-- python manage.py createsuperuser
-- python manage.py runserver
+- Access the registration page: http://127.0.0.1:8000/register/
+- Register a new user with a unique username and email.
+- Access the login page: http://127.0.0.1:8000/login/
+- Log in using the registered username or email.
+- After login, you will be redirected to the dashboard: http://127.0.0.1:8000/dashboard/
+- Access the user profile: http://127.0.0.1:8000/profile/
+- Logout using the "Logout" link.
+
