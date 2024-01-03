@@ -1,0 +1,54 @@
+{% extends 'base.html' %} {% block title %}Login{% endblock %} 
+{% block content%}
+<script type="text/javascript">
+  function signUp(event) {
+    event.preventDefault();
+
+    window.location = "../register";
+  }
+</script>
+<div class="container mt-5">
+  <h3 class="">Login</h3>
+  <form method="post" action="{% url 'login' %}" class="mt-4">
+    {% csrf_token %}
+
+    <div class="mb-3">
+      <label for="id_username" class="form-label">Username:</label>
+      <input
+        type="text"
+        name="username"
+        autofocus
+        autocapitalize="none"
+        autocomplete="username"
+        maxlength="150"
+        required
+        class="form-control"
+        style="width: 300px"
+        id="id_username"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="id_password" class="form-label">Password:</label>
+      <input
+        type="password"
+        name="password"
+        autocomplete="current-password"
+        required
+        class="form-control"
+        style="width: 300px"
+        id="id_password"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+
+  <button onclick="signUp(event)" class="btn btn-secondary my-2">SignUp</button>
+
+  {% if status %}
+  <div class="mt-4 alert alert-danger">{{ status }}</div>
+  {% endif %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends 'base.html' %} {% block title %}Dashboard{% endblock %} 
+{% block content %}
+
+<script type="text/javascript">
+  function login(event) {
+    event.preventDefault();
+
+    window.location = "../login";
+  }
+</script>
+<div class="container mt-5">
+  <h3 class="">Register</h3>
+  <form method="post" action="{% url 'register' %}" class="mt-4">
+    {% csrf_token %}
+
+    <div class="mb-3">
+      <input
+        type="text"
+        name="username"
+        placeholder="Username"
+        class="form-control"
+        style="width: 300px"
+      />
+    </div>
+
+    <div class="mb-3">
+      <input
+        type="email"
+        name="email"
+        placeholder="Email"
+        class="form-control"
+        style="width: 300px"
+      />
+    </div>
+
+    <div class="mb-3">
+      <input
+        type="password"
+        name="password1"
+        placeholder="Password"
+        class="form-control"
+        style="width: 300px"
+      />
+    </div>
+
+    <div class="mb-3">
+      <input
+        type="password"
+        name="password2"
+        placeholder="Confirm Password"
+        class="form-control"
+        style="width: 300px"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Register</button>
+  </form>
+
+  <button onclick="login(event)" class="btn btn-secondary my-2">Login</button>
+
+  {% if status %}
+  <div class="mt-4 alert alert-danger">{{ status }}</div>
+  {% endif %}
+</div>
+
+{% endblock %}
