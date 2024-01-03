@@ -68,3 +68,9 @@ The application will be accessible at http://127.0.0.1:8000/login/
 - Access the user profile: http://127.0.0.1:8000/profile/
 - Logout using the "Logout" link.
 
+
+## Notes
+
+- This project uses Django's built-in authentication system, including UserCreationForm and AuthenticationForm.
+- Passwords are securely stored using Django's password hashing.
+- Session management is handled by Django's authentication system.
