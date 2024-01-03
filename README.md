@@ -25,4 +25,9 @@ The project is organized into a Django project and a single app. The main compon
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/your-repo.git
+   git clone https://github.com/bipins867/OnlineProject.git
+
+
+
+
+
