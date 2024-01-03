@@ -2,6 +2,8 @@
 
 This is a simple Django web application implementing user authentication features, including user registration, login, logout, and basic user profile.
 
+Video Demonstration :- https://drive.google.com/file/d/1AmhwQl9yc3iFil5TUzpxj9eyxeBBQBJt/view?usp=sharing
+
 ## Features
 
 - User registration (sign-up) with fields: Username, Email, Password, Confirm Password.
