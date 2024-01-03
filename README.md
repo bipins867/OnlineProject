@@ -29,5 +29,10 @@ The project is organized into a Django project and a single app. The main compon
 
 
 
+## Follow the instructions
 
-
+- cd OnlineProject
+- pip install django   
+- python manage.py migrate
+- python manage.py createsuperuser
+- python manage.py runserver
